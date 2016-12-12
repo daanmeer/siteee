@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Ghentlemen | Home</title>
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+<body>
+	<div class="start_div">
+		<object>
+			<a href="index.html"><embed class="logo" src="Svg/logo2.html"></a>
+		</object>
+		<a href="homepage.html" id="explore" class="explore">Explore</a>
+	</div>
+	<img src="skylineGent.svg" class="skyline" alt="De getekende Gentste skyline">
+	<script type="text/javascript">
+		function start(){
+			setTimeout(function() {
+				var skyline = document.querySelectorAll('.skyline');
+				skyline[0].style.opacity= '.7';
+				skyline[0].style.bottom= '-5rem';
+			}, 10);
+			setTimeout(function() {
+				document.getElementById("explore").style.backgroundColor = "#A8DFFA";
+			}, 1400);
+		}
+		start();
+
+	</script>
+
+</body>
+</html>
