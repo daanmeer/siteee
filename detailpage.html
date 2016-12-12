@@ -3,6 +3,66 @@
 	<title>Ghentlemen | Home</title>
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+ .detail_content{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: rgba(255,255,255,.9);
+    text-overflow: ellipsis;
+    float: left;
+    -webkit-box-shadow: -8px -14px 37px -30px rgba(0,0,0,0.75);
+    -moz-box-shadow: -8px -14px 37px -30px rgba(0,0,0,0.75);
+    box-shadow: -8px -14px 37px -30px rgba(0,0,0,0.75);
+ }
+ div.detail_startimg {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://visit.gent.be/sites/default/files/images-spot/gentverlicht_gent5_0.jpg');
+    background-size: cover;
+    position: relative;
+    float: left;
+    background-attachment: fixed;
+    background-position: left center;
+ }
+.titleLike {
+     float: left;
+     display: block;
+     height: 4rem;
+     width: 100vw;
+     padding: 2rem 6vw 7rem;
+     border-bottom: 2px solid black; 
+ }
+ h1 {
+     float: left;
+     font-family: 'Oswald', sans-serif;
+     font-weight: 500;
+     font-size: 5rem;
+     text-align: left;
+     line-height: 6rem;
+     width: 70vw;
+ }
+ .likebutton{
+     text-align: left;
+     float: left;
+     line-height: 6rem;
+     font-size: 6rem;
+     color:#333;
+        text-shadow: -2px -2px 16px rgba(150, 150, 150, 1);
+ }
+ .likebutton:hover {
+     color: #F48B94;     
+     transition: .323s;
+ }
+ p{   
+     white-space: normal; 
+     font-family: 'Raleway', sans-serif;
+     font-size: 1rem;
+     margin: 1rem;
+     padding: 1rem;  
+     float: left;
+ }
+    </style>
 </head>
 <body>
   <div class="hamburger-menu">
@@ -27,11 +87,25 @@
         <div>
             <div class="detail_startimg"></div>
             <div class='detail_content'>
-                <h1>Graslei</h1>
+                <div class="titleLike">
+                    <h1>Graslei</h1><i class="fa fa-heart likebutton" aria-hidden="true"></i>
+                </div>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ultricies neque ac metus vehicula, et ornare sapien aliquam. Mauris in molestie lacus. Donec laoreet libero eget quam consequat tincidunt. Mauris sit amet nulla vitae dui tristique porttitor. Praesent mollis, purus quis posuere facilisis, sem lectus pellentesque eros, ut tempus eros lectus eget leo. Mauris gravida augue a leo rhoncus, ut pellentesque purus eleifend. Suspendisse et ante id lacus blandit feugiat. Fusce sapien dolor, laoreet eget nisi ut, molestie vestibulum enim. Cras sem sem, ultricies id eros eu, pulvinar convallis massa. Maecenas congue, magna eu lobortis tristique, augue sapien placerat nibh, in consectetur justo mauris ut purus. In hac habitasse platea dictumst. Cras sit amet neque sit amet risus eleifend ultricies nec sit amet enim. Sed eget rhoncus mauris, in pulvinar massa.
                 <p>
             </div>
         </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="nav.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".likebutton").click(function(){
+                $(this).css('color', '#F48B94');
+            });
+        });
+        $( "p" ).click(function() {
+    $( this ).toggleClass( "click" );
+});
+    
+    </script>
 </body>
 </html>

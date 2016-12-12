@@ -260,37 +260,7 @@ nav ul a {
     background-image: url('http://www.arrivalguides.com/s3/ag-images-eu/10/6e7407dba3cd45f12f7961d76fc721a9.jpg');
 }
 
-.detail_startimg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -300;
-    display: block;
-    background-image: url('http://imagene.youropi.com/graslei-gent-1(p:location,405)(c:0).jpg');
-    background-size: cover;    
-    float: left;
-}
-.detail_content {
-    display: block;
-    float: left;
-}
-.detail_content h1 {
-    font-family: 'Oswald';
-    font-size: 5rem;
-    padding: 0 2rem;
-    color: white;    
-    margin: 90vh 0 0;
-}
-.detail_content p {
-    background-color: white;
-    padding: 2rem;
-    font-family: 'Raleway';
-    font-size: 2rem;
-}
+
 .menu {
     z-index: 3000;
     display: none;
