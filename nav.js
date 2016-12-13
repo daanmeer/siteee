@@ -24,7 +24,7 @@ $(window).resize(function(){
       }
    }
 });
-(function () {
+$(document).ready(function(){
 	$('.hamburger-menu').on('click', function() {
 		$('.bar').toggleClass('animate');
 		$('.menu').toggleClass('menuClicked');
