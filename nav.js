@@ -10,8 +10,8 @@ function titleAnimation(){
     title[0].style.letterSpacing = '.5rem';
 };
 app();
-
-/*var width = $(window).width();
+/*
+var width = $(window).width();
 $(window).resize(function(){
    if($(this).width() != width){
       width = $(this).width();
@@ -24,14 +24,16 @@ $(window).resize(function(){
         title[0].style.letterSpacing = '0';
       }
    }
-});*/
+});
 
-$(document).ready(function(){
+*/
+
+(function () {
 	$('.hamburger-menu').on('click', function() {
 		$('.bar').toggleClass('animate');
 		$('.menu').toggleClass('menuClicked');
 	})
-});
+})();
 
 function ctaScroll(){
     var m = document.getElementById("scroll_icon");
