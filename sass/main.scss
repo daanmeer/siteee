@@ -85,6 +85,7 @@ body {
     height: 29vh;
     text-align: center;
     line-height: 29vh;
+    position: relative;
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
@@ -115,7 +116,7 @@ body {
     border-bottom: 4px solid white;
 }
 .toplogo {
-    position: abso;
+    position: relative;
     top: 2vh;
     height: 10vh;
     left: 45%;
@@ -175,7 +176,7 @@ nav{
     z-index: 100000;
 }
 nav ul {
-    position: fixed;
+    position: absolute;
     background: $grey2;
     bottom: 0;
     top: 13vh;
