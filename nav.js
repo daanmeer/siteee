@@ -10,11 +10,11 @@ function titleAnimation(){
     title[0].style.letterSpacing = '.5rem';
 };
 app();
-$(document).ready(function(){
-$width = $(window).width();
+
+/*var width = $(window).width();
 $(window).resize(function(){
    if($(this).width() != width){
-      $width = $(this).width();
+      width = $(this).width();
       if(width > 900){
         setTimeout(titleAnimation, 100);      
       }
@@ -24,8 +24,8 @@ $(window).resize(function(){
         title[0].style.letterSpacing = '0';
       }
    }
-});
-});
+});*/
+
 $(document).ready(function(){
 	$('.hamburger-menu').on('click', function() {
 		$('.bar').toggleClass('animate');
