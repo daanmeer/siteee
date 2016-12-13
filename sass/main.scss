@@ -116,7 +116,7 @@ body {
     border-bottom: 4px solid white;
 }
 .toplogo {
-    position: relative;
+    position: absolute;
     top: 2vh;
     height: 10vh;
     left: 45%;
@@ -167,7 +167,7 @@ div.food_global ul.detailFood li a {
     border: solid $black $borderWidthDetail;
 }
 nav{
-    position: fixed;
+    position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
