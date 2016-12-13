@@ -41,7 +41,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 5px;
   padding: 0.5rem;
-  width: 15vw;
+  width: 50vw;
   margin: 5vh auto;
   display: block;
   text-align: center;
@@ -255,10 +255,10 @@ nav ul a {
   position: absolute;
   top: auto;
   left: auto;
-  z-index: 3333333333;
   right: 6vw;
   bottom: auto;
   margin: 4vh 0 0;
+  z-index: 999999999999999999999999999999;
   width: 50px;
   height: 35px;
   cursor: pointer;
@@ -463,4 +463,6 @@ nav ul a {
     transition: .7s;
     z-index: 99999999999999999999999999999999999; }
   .slider {
-    display: block; } }
+    display: block; }
+  .explore {
+    width: 30vw; } }
