@@ -10,7 +10,6 @@ function titleAnimation(){
     title[0].style.letterSpacing = '.5rem';
 };
 app();
-/*
 var width = $(window).width();
 $(window).resize(function(){
    if($(this).width() != width){
@@ -25,9 +24,6 @@ $(window).resize(function(){
       }
    }
 });
-
-*/
-
 (function () {
 	$('.hamburger-menu').on('click', function() {
 		$('.bar').toggleClass('animate');
