@@ -11,9 +11,9 @@ $grey4: rgba(40,40,40,.9);
 $backgroundGrey: #3E3E3E;
 $margin: 16px;
 $borderWidthDetail: 13px;
-$bar-width: 60px;
-$bar-height: 10px;
-$bar-spacing: 17px;
+$bar-width: 50px;
+$bar-height: 5px;
+$bar-spacing: 15px;
 $color-hamburger : $green;
 * {
   padding : 0;
@@ -118,7 +118,7 @@ body {
     position: fixed;
     top: 2vh;
     height: 10vh;
-    left: 50%;
+    left: 45%;
     width: 70vw;
     margin-right: -50%;
     transform: translate(-50%, 0%)
@@ -188,10 +188,10 @@ nav ul li {
 nav ul a {
     text-decoration: none; 
     font-family: "Oswald",sans-serif;
-    font-size: 4rem;
+    font-size: 8vh;
     line-height: 13vh;
     padding: 0 10vw;
-    margin: 3vh;
+    margin: 3vh 0;
     text-transform: uppercase;
     background-color: black;
     color: white;
@@ -282,12 +282,12 @@ nav ul a {
 
 .hamburger-menu {
 	position: absolute;
-    top: 4vh;
+    top: auto;
     left: auto;
     z-index: 3333333333;
     right: 6vw;
     bottom: auto;
-    margin: auto;
+    margin: 4vh 0 0;
     width: $bar-width;
 	height: $bar-height + $bar-spacing*2;
 	cursor: pointer;
@@ -347,6 +347,9 @@ nav ul a {
 	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
 }
 .slider {
+    display: none;
+}
+#scroll_icon {
     display: none;
 }
 @media screen and (min-width: 650px) {
@@ -522,6 +525,7 @@ nav ul a {
         width: 100vw;
         text-align: center;
         transition: .7s;
+        z-index: 99999999999999999999999999999999999;
     }
     .slider {
         display: block;

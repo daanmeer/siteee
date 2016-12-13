@@ -1,13 +1,61 @@
 <html>
 <head>
 	<title>Ghentlemen | Fastfood</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <style>
+        .detail_Scroll{
+            position: relative;  
+            height: 100vh;
+            width: 100vw;
+            background-size: cover;
+            background-color: rgba(0,0,0,.3);
+            background-blend-mode: overlay;
+            color: white;
+        }
+        .pizzahut{
+            background-image: url('pizzahut.jpg');
+        }
+        .mcdo {
+            background-image: url('mcdo.jpg');
+        }
+        .detail_Scroll div{
+            position: absolute;
+            bottom: 0;
+            left:0;
+            line-height: 6vw;
+            font-size: 4vw;
+            font-family: 'Raleway';
+        }
+        .detail_Scroll h1{
+            font-weight: 700;
+
+        }
+        .detail_Scroll h2{
+            font-weight: 100;
+
+        }
+        .titel {
+            z-index: 300000000;
+            bottom: auto;
+        }
+        .hamburger-menu {
+            position: fixed;
+        }
+    @media screen and (min-width: 900px) {
+        .titel {
+            height: 100vh;
+            width: 100vw;
+            position: relative;
+        }
+    </style>
 </head>
 <body>
   <div class="hamburger-menu">
 		  <div class="bar"></div>	
 	</div>
+        <i class="fa fa-caret-down" id="scroll_icon" aria-hidden="true"></i>
         <div>
         <nav class='menu'>
             <object>
@@ -15,14 +63,43 @@
             </object>
             <div class="backMenu"></div>
             <ul>
-            <li class="McDonald's'" ><a href="McDonalds.html">McDonald's</a></li>
-            <li class="McDonald's'" ><a href="McDonalds.html">McDonald's</a></li>
-            <li class="McDonald's'" ><a href="McDonalds.html">McDonald's</a></li>
-            <li class="McDonald's'" ><a href="McDonalds.html">McDonald's</a></li>
-            <li class="McDonald's'" ><a href="McDonalds.html">McDonald's</a></li>
-            <li class="McDonald's'" ><a href="McDonalds.html">McDonald's</a></li>            
-        </ul>
-    </div>
+                <li class="activity" ><a href="activity.html">activity</a></li>
+                <li class="food" ><a href="food.html">food</a></li>
+                <li class="goOut" ><a href="goOut.html">go out</a></li>
+                <li class="discover" ><a href="discover.html">discover</a></li>
+                <li class="fuel" ><a href="fuel.html">fuel</a></li>
+                <li class="parking" ><a href="parking.html">parking</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="titel">Fastfood</div>
+        <div>
+            <div class='detail_Scroll mcdo'>
+                <div>
+                    <h1>Mc Donalds</h1>
+                    <h2>Korenmarkt</h2>
+                </div>
+            </div>
+            <div class='detail_Scroll pizzahut'>
+                <div>
+                    <h1>Pizzahut</h1>
+                    <h2>Korenmarkt</h2>
+                </div>
+            </div>
+            <div class='detail_Scroll mcdo'>
+                <div>
+                    <h1>Mc Donalds</h1>
+                    <h2>Korenmarkt</h2>
+                </div>
+            </div>
+            <div class='detail_Scroll pizzahut'>
+                <div>
+                    <h1>Pizzahut</h1>
+                    <h2>Korenmarkt</h2>
+                </div>
+            </div>
+            
+        </div>
     <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <script src="nav.js"></script>
 </body>

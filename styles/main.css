@@ -102,7 +102,7 @@ body {
   position: fixed;
   top: 2vh;
   height: 10vh;
-  left: 50%;
+  left: 45%;
   width: 70vw;
   margin-right: -50%;
   transform: translate(-50%, 0%); }
@@ -172,10 +172,10 @@ nav ul li {
 nav ul a {
   text-decoration: none;
   font-family: "Oswald",sans-serif;
-  font-size: 4rem;
+  font-size: 8vh;
   line-height: 13vh;
   padding: 0 10vw;
-  margin: 3vh;
+  margin: 3vh 0;
   text-transform: uppercase;
   background-color: black;
   color: white; }
@@ -253,14 +253,14 @@ nav ul a {
 
 .hamburger-menu {
   position: absolute;
-  top: 4vh;
+  top: auto;
   left: auto;
   z-index: 3333333333;
   right: 6vw;
   bottom: auto;
-  margin: auto;
-  width: 60px;
-  height: 44px;
+  margin: 4vh 0 0;
+  width: 50px;
+  height: 35px;
   cursor: pointer;
   -webkit-touch-callout: none;
   /* iOS Safari */
@@ -277,12 +277,12 @@ nav ul a {
 .bar,
 .bar:after,
 .bar:before {
-  width: 60px;
-  height: 10px; }
+  width: 50px;
+  height: 5px; }
 
 .bar {
   position: relative;
-  transform: translateY(17px);
+  transform: translateY(15px);
   background: #D9DBBC;
   transition: all 0ms 300ms; }
   .bar.animate {
@@ -292,7 +292,7 @@ nav ul a {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 17px;
+  bottom: 15px;
   background: #D9DBBC;
   transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
@@ -300,7 +300,7 @@ nav ul a {
   content: "";
   position: absolute;
   left: 0;
-  top: 17px;
+  top: 15px;
   background: #D9DBBC;
   transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
@@ -315,6 +315,9 @@ nav ul a {
   transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1); }
 
 .slider {
+  display: none; }
+
+#scroll_icon {
   display: none; }
 
 @media screen and (min-width: 650px) {
@@ -457,6 +460,7 @@ nav ul a {
     font-size: 3rem;
     width: 100vw;
     text-align: center;
-    transition: .7s; }
+    transition: .7s;
+    z-index: 99999999999999999999999999999999999; }
   .slider {
     display: block; } }
