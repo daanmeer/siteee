@@ -10,9 +10,12 @@
             height: 100vh;
             width: 100vw;
             background-size: cover;
-            background-color: rgba(0,0,0,.3);
-            background-blend-mode: overlay;
-            color: white;
+            background-color: rgba(0,0,0,.9);
+            background-attachment: fixed;
+            color: #D9DBBC;
+            -webkit-box-shadow: 3px -4px 47px -15px rgba(0,0,0,0.75);
+            -moz-box-shadow: 3px -4px 47px -15px rgba(0,0,0,0.75);
+            box-shadow: 3px -4px 47px -15px rgba(0,0,0,0.75);
         }
         .pizzahut{
             background-image: url('pizzahut.jpg');
@@ -22,11 +25,15 @@
         }
         .detail_Scroll div{
             position: absolute;
-            bottom: 0;
-            left:0;
+            bottom: 10vh;
+            left:1vw;
             line-height: 6vw;
             font-size: 4vw;
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, .7);
+            padding: 3vh 3vw;
             font-family: 'Raleway';
+            
         }
         .detail_Scroll h1{
             font-weight: 700;
@@ -37,14 +44,16 @@
 
         }
         .titel {
-            z-index: 300000000;
             bottom: auto;
+            position: fixed;
+            z-index: 300000000;
         }
         .hamburger-menu {
             position: fixed;
         }
     @media screen and (min-width: 900px) {
         .titel {
+            z-index: 1;
             height: 100vh;
             width: 100vw;
             position: relative;

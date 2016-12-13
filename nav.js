@@ -24,11 +24,12 @@ $(window).resize(function(){
       }
    }
 });
+(function () {
 	$('.hamburger-menu').on('click', function() {
 		$('.bar').toggleClass('animate');
 		$('.menu').toggleClass('menuClicked');
 	})
-
+})();
 
 function ctaScroll(){
     var m = document.getElementById("scroll_icon");
