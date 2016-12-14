@@ -83,34 +83,32 @@
         </nav>
         </div>
         <div class="titel">Fastfood</div>
-        <div>
-            <div class='detail_Scroll mcdo'>
-                <div>
-                    <h1>Mc Donalds</h1>
-                    <h2>Korenmarkt</h2>
-                </div>
-            </div>
-            <div class='detail_Scroll pizzahut'>
-                <div>
-                    <h1>Pizzahut</h1>
-                    <h2>Korenmarkt</h2>
-                </div>
-            </div>
-            <div class='detail_Scroll mcdo'>
-                <div>
-                    <h1>Mc Donalds</h1>
-                    <h2>Korenmarkt</h2>
-                </div>
-            </div>
-            <div class='detail_Scroll pizzahut'>
-                <div>
-                    <h1>Pizzahut</h1>
-                    <h2>Korenmarkt</h2>
-                </div>
-            </div>
-            
+        <div class="fastfood_places">
+                <!--Hier staan de fastfood plaatsen-->
         </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="nav.js"></script>
+    <script>
+            $(document).ready(function(){
+            $.getJSON( "https://raw.githubusercontent.com/thomcopp/thomcopp.github.io/master/json/ghentlemanFood.json", function( data ) {
+                var id = 0;
+                var fastfood = [];
+                console.log(data);
+                for (var i = 0; i < data.food.length; i++) {
+                    if(data.food[i].categorie == "fastfood")
+                    {
+                        fastfood[id] = data.food[i];
+                        $('.fastfood_places').append("<div class=\'" + "detail_Scroll \'" + "style=\' background-image: url(\" " + fastfood[id].image+ " \")\'>" +
+                    "<div><h1>" + fastfood[id].naam + "</h1><h2>" + fastfood[id].location[0].street + " " + fastfood[id].location[1].number + "</h2></div></div>");
+                        console.log(fastfood[id].image);
+                        id++;
+
+                    }
+                }
+            });
+        });
+
+
+    </script>
 </body>
 </html>
