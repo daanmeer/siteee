@@ -16,15 +16,15 @@ $bar-height: 5px;
 $bar-spacing: 15px;
 $color-hamburger : $green;
 * {
-  padding : 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding : 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
 }
 
 body {
     background: $black;
     width: 100vw;
-    overflow-y: hidden;
     white-space:nowrap;
 }
 .logo {
