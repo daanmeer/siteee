@@ -1,0 +1,24 @@
+.graven {
+  position: fixed;
+  bottom: -10vh;
+  transition: 3s;
+  opacity: 0;
+}
+
+.content_home {
+  position: fixed;
+  bottom: 3rem;
+  font-size: 5rem;
+  color: white;
+  font-weight: 100;
+  border: 2px solid white;
+  padding: 5px 10px;
+  left: 3vw;
+  font-family: 'Raleway';
+  text-transform: uppercase;
+}
+
+#test {
+  transition: .9s;
+  opacity: 0;
+}

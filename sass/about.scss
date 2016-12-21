@@ -1,0 +1,28 @@
+body {
+  background-color: rgba(24, 24, 24, 0.8);
+}
+
+.nameTitle {
+  float: left;
+  width: 50vw;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: 3rem;
+  text-align: center;
+  text-align: center;
+}
+
+span {
+  font-weight: 900;
+}
+
+img {
+  height: 60vh;
+  float: left;
+}
+
+.content_video {
+  position: fixed;
+  bottom: 0;
+}
