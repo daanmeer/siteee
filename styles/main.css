@@ -10,7 +10,7 @@ html {
 body {
   background: #101010;
   width: 100vw;
-  overflow-y: hidden;
+  overflow-x: hidden;
   white-space: nowrap; }
 
 .logo {
