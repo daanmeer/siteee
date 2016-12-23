@@ -1,7 +1,5 @@
 $(document).ready(function(){
     $.getJSON("https://datatank.stad.gent/4/mobiliteit/bezettingparkingsrealtime.json", function(data) {
-        var id = 0;
-        var parking = [];
         for (var i = 0; i < data.length; i++) {
             //console.log(data[i]);
             $('.parking_name').append("<li ><a href=\'detailpage.html\'>" + data[i].name +"</a></li>")
