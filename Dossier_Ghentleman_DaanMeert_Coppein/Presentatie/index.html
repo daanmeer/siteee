@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+		<link href="https://fonts.googleapis.com/css?family=Abhaya+Libre" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background-color="#3C3C3B">
+					<object>
+						<a href="index.html"><embed class="startLogo" src="Logo2.svg"></a>
+					</object>
+				</section>
+				<section data-markdown class="titel" data-background-color="#3C3C3B">
+		            <script type="text/template">
+						<span style="font-family: Oswald; font-weight: 400; font-size: 2em;">Concept</span>
+
+						<p style="font-family: Raleway; font-weight: 100; font-size: 1em;">
+							Een gids door Gent afhankelijk van uw profiel, interesses en budget. 
+						</p>
+		            </script>
+				</section>
+				<section data-background-color="#3C3C3B">
+					<object>
+						<a href="index.html"><embed class="ideeApp" src="Gsms.svg"></a>
+					</object>
+				</section>
+				<section data-markdown class="titel" data-background-color="#3C3C3B">
+		            <script type="text/template">
+						<span style="font-family: Oswald; font-weight: 400; font-size: 2em;">Idee</span>
+
+						<p style="font-family: Raleway; font-weight: 100; font-size: 1em;">
+						Ik kwam op het idee omdat er elk jaar nieuwe studenten en elke dag nieuwe toeristen naar Gent komen om er een leuke tijd van te maken, maar niet altijd weten wat te doen.
+						</p>
+		            </script>
+				</section>
+				<section data-markdown class="titel" data-background-color="#3C3C3B">
+	    	        <script type="text/template">
+						<span style="font-family: Oswald; font-weight: 400; font-size: 2em;">Naam</span>
+
+						<p style="font-family: Raleway; font-weight: 100; font-size: 1em;">
+					Ik heb ook de naam Ghentleman bedacht wat een combinatie is van Gent en gentleman. Omdat
+						de de app je gaat rondleiden door de stad als een heer.
+		            </script>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
