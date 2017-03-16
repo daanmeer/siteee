@@ -1,37 +1,65 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-	<title>Ghentlemen | Home</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="styles/main.css">
-	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" href="favicon/favicon-32x32.png" sizes="32x32">
-	<link rel="icon" type="image/png" href="favicon/favicon-16x16.png" sizes="16x16">
-	<link rel="manifest" href="favicon/manifest.json">
-	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
-	<meta name="theme-color" content="#ffffff">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+  <title>Contact Form Example</title>
 </head>
-<body>
-	<div class="start_div">
-		<object>
-			<a href="index.html"><embed class="logo" src="Svg/logo2.html"></a>
-		</object>
-		<a href="homepage.html" id="explore" class="explore">Explore</a>
-	</div>
-	<img src="skylineGent.svg" class="skyline" alt="De getekende Gentste skyline">
-	<script type="text/javascript">
-		function start(){
-			setTimeout(function() {
-				var skyline = document.querySelectorAll('.skyline');
-				skyline[0].style.opacity= '.7';
-				skyline[0].style.bottom= '-5rem';
-			}, 10);
-			setTimeout(function() {
-				document.getElementById("explore").style.backgroundColor = "#A8DFFA";
-			}, 1400);
-		}
-		start();
 
-	</script>
+<body>
+  <h2 class="content-head is-center">Contact Us!</h2>
+  <aside>
+
+   </aside>
+
+<!-- START HERE -->
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbz4Dy1TncIVuiNrEF406zkuRuYD6aUlYdG58q23O8FEJhnbc1lG/exec">
+    <!-- change the form action to your script url -->
+
+    <fieldset class="pure-group">
+      <input id="name" name="name" placeholder="Naam" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <textarea id="message" name="message" rows="10"
+      placeholder="Bericht"></textarea>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <input id="email" name="email" type="email" value=""
+      required placeholder="email"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <input id="color" name="color" placeholder="Favoriet familielid" />
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+
+  </form>
+
+  <!-- Customise the Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
 
 </body>
 </html>
